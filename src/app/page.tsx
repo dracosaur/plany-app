@@ -1,10 +1,16 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client'
+import { useState } from "react";
+import HomePage from "@/containers/HomePage";
+import LoginPage from "@/containers/LoginPage";
 
 export default function Home() {
+  const [ isAuthenticated, setIsAuthenticated ] = useState(true)
+  
   return (
-    <main className={styles.main}>
-      <h1>Bem vindo ao Plany</h1>
+    <main>
+      {
+        isAuthenticated ? <HomePage /> : <LoginPage />
+      }
     </main>
   );
 }
