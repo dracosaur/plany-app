@@ -1,9 +1,9 @@
 import { IHomePageLayout } from '@/containers/HomePage/data'
 import S from './styles';
-import { Header } from '@/components/Header';
+import { Menu } from '@/components/Menu';
 
 export const HomePage = ({ data }: IHomePageLayout) => (
   <S.Container id={`HomePage`}>
-    <Header />
+    <Menu />
   </S.Container>
 )
