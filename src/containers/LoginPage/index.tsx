@@ -1,3 +1,4 @@
+'use client'
 import { ILoginPage } from '@/containers/LoginPage/data';
 import { LoginPage as Layout } from './Layout';
 

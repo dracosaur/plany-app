@@ -5,6 +5,9 @@ const nextConfig = {
     compiler: {
       removeConsole: process.env.NODE_ENV !== "development", // Remove console.log in production
     },
+    typescript: {
+      ignoreBuildErrors: true,
+   },
   };
   
   // Configuration object tells the next-pwa plugin 

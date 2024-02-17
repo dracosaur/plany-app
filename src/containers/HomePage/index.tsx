@@ -1,3 +1,4 @@
+'use client'
 import { IHomePage } from '@/containers/HomePage/data';
 import { HomePage as Layout } from './Layout';
 
